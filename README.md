@@ -5,6 +5,8 @@ A quick tutorial demonstrating the basics of web scraping for the Open Source Cl
 Running this script will show all of the links on [https://google.com](https://google.com). However, you can also provide a URL as an argument and the script will display all of the links on that page.
 
 ## API Example
+This is a trimmed down version of our [Youtube-Stats](https://github.com/ufosc/youtube-stats) project!
+
 To make the api_example.py project work, you must have a config.py file in this directory that contains the following line.
 
 ```
