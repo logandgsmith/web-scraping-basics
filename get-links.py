@@ -28,6 +28,9 @@ def main():
     #print(soup.prettify())
 
     # Print all of the links on a page
+    print('=== Results for === ')
+    print(url, end='\n\n')
+    print('=== Links found on page ===')
     for link in soup.find_all('a'):
         print(link.get('href'))
 
