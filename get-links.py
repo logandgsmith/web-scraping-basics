@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 
+import sys
 import requests
 import bs4
 
 def main():
+    # Set default url
+    url = 'https://google.com' 
+
+    # Check for CLI args
+    if len(sys.argv) > 1:
+        url = sys.argv[1]
+
     # Attempt to get a specified page
-    res = requests.get('https://drop.com/mechanical-keyboards/home')
+    res = requests.get(url)
 
     # Check if the response is 200 (OK)
     if res.status_code != 200:
